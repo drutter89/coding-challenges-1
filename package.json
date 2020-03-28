@@ -1,18 +1,33 @@
 {
-  "name": "coding_challenges",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.8.7",
-    "@babel/preset-env": "^7.8.7",
-    "babel-jest": "^25.1.0",
-    "babel-plugin-goto": "0.0.1",
-    "jest": "^25.1.0"
-  }
+    "name": "coding_challenges",
+    "version": "0.0.1",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest",
+        "format": "prettier --write .",
+        "formatCheck": "prettier --check ."
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/cli": "^7.8.4",
+        "@babel/core": "^7.8.7",
+        "@babel/node": "^7.8.7",
+        "@babel/preset-env": "^7.8.7",
+        "babel-jest": "^25.1.0",
+        "babel-plugin-goto": "0.0.1",
+        "husky": "^4.2.3",
+        "jest": "^25.1.0",
+        "lint-staged": "^10.0.9",
+        "prettier": "2.0.2"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{js,json,css,md}": "prettier --write ."
+    }
 }
