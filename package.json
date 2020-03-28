@@ -4,7 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "jest",
+        "test": "jest challenges/ --testRegex=\"${npm_config_challenge}.test.js$\"",
+        "lol": "echo ${npm_config_foo}",
         "format": "prettier --write .",
         "formatCheck": "prettier --check ."
     },
