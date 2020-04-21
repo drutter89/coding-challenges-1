@@ -14,3 +14,6 @@
 ## Useful Tips
 
 1. If you ever want to mess around with your function outside of this environment, just copy and paste the function you wrote into RunJS.
+1. A better way to run tests for a single function: `npx jest challenges/5-arraycardio -t "#lastElement"`
+1. Generic form of above: `npx jest challenges/{CHALLENGE_FOLDER} -t "#{FUNCTION_NAME}"`
+1. If you want to also have the tests auto-reload on save, do the above command but add `--watch`
