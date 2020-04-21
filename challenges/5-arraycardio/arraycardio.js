@@ -2,22 +2,26 @@ import letterGrade from "../1-grades/grades";
 
 // NOTE: unless otherwise specified, only the following
 // JavaScript array functions are allowed to be used:
-// Array.push, Array.pop
+// Array.push, Array.pop, Array.isArray
 
 /*  Return the last element in the array. 
-    If `arr` is not an array, return null.
+    If `arr` is not an array or has length 0, return null.
+    arr is guaranteed to be an array.
 */
 function lastElement(arr) {
     // implementation
 }
 
 /*
-    You are given `arr, an Array, and `index`, a number.
+    You are given `arr`, an Array, and `index`, a number.
     If index >= 0, return the element at the index
     If index < 0, return the element using these examples as a guide:
         getElementAt([1,3], -1) --> 3
         getElementAt([1,3], -2) --> 1
         getElementAt([1,3,4,6], -2) --> 4
+    If index is out of bounds, return undefined.
+        getElementAt([1,3], 5) --> undefined
+        getElementAt([1,3], -3) --> undefined
 */
 
 function getElementAt(arr, index) {

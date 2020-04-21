@@ -81,4 +81,11 @@ describe("5-arraycardio", () => {
             expect(arr).toEqual([2, 1, 3]);
         });
     });
+
+    describe("#insertIntoNewArray", () => {
+        it("inserts", () => {
+            let newArr = insertIntoNewArray([1, 2], 1, 9);
+            expect(newArr).toEqual([1, 9, 2]);
+        });
+    });
 });
