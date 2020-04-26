@@ -13,14 +13,14 @@
     "license": "ISC",
     "devDependencies": {
         "@babel/cli": "^7.8.4",
-        "@babel/core": "^7.8.7",
+        "@babel/core": "^7.9.0",
         "@babel/node": "^7.8.7",
-        "@babel/preset-env": "^7.8.7",
-        "babel-jest": "^25.1.0",
+        "@babel/preset-env": "^7.9.5",
+        "babel-jest": "^25.4.0",
         "babel-plugin-goto": "0.0.1",
-        "husky": "^4.2.3",
-        "jest": "^25.1.0",
-        "lint-staged": "^10.0.9",
+        "husky": "^4.2.5",
+        "jest": "^25.4.0",
+        "lint-staged": "^10.1.7",
         "prettier": "2.0.2"
     },
     "husky": {
