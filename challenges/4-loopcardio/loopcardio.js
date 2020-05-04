@@ -5,6 +5,9 @@ Precondition: n > 0, and n will be an integer.
 
 function printNumbersUntil(n) {
     // implement this
+    for (let i = 1; i <= n; i++) {
+        console.log(i);
+    }
 }
 
 /*
