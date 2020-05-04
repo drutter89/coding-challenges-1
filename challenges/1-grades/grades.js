@@ -13,6 +13,25 @@
 */
 
 function letterGrade(numberGrade) {
+    if (numberGrade < 0) {
+        return null;
+    }
+    if (numberGrade <= 59) {
+        return "F";
+    }
+    if (numberGrade <= 69) {
+        return "D";
+    }
+    if (numberGrade <= 79) {
+        return "C";
+    }
+    if (numberGrade <= 89) {
+        return "B";
+    }
+    if (numberGrade <= 100) {
+        return "A";
+    }
+
     return null;
 }
 
