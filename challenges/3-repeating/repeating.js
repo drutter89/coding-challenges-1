@@ -4,6 +4,10 @@
     You will need to use a loop.
 */
 
-function repeating(message, times) {}
+function repeating(message, times) {
+    for (let i = 0; i < times; i++) {
+        console.log(message);
+    }
+}
 
 export default repeating;
